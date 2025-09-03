@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Host Page" />
+    <title>Host Page</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/styles.css" />
+
+    <!-- Load Vonage Video Client SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@vonage/client-sdk-video@latest/dist/js/opentok.min.js"></script>
+
+    <!-- Load Web Components-->
+    <!-- <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@vonage/video-publisher@latest/video-publisher.js/+esm"
+    ></script> -->
+
+    <!-- <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@vonage/video-subscribers@latest/video-subscribers.js/+esm"
+    ></script> -->
+
+    <!-- <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@vonage/screen-share@latest/screen-share.js/+esm"
+    ></script> -->
+
+    <!-- <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@vonage/live-chat@latest/live-chat.js/+esm"
+    ></script> -->
+
+    <!-- <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@vonage/live-poll-control@latest/live-poll-control.js/+esm"
+    ></script> -->
+
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Host</h1>
+    </header>
+    <main id="video-chat-container">
+      <section id="publisher-container">
+        <fieldset>
+          <legend>Publisher</legend>
+          <!-- <video-publisher></video-publisher> -->
+        </fieldset>
+        <button id="video-toggle">toggle Video</button>
+        <button id="audio-toggle">toggle Audio</button>
+        <br /><br />
+        <!-- <screen-share /> -->
+        <!-- <screen-share start-text="start" stop-text="stop"></screen-share> -->
+      </section>
+      <section id="subscribers-container">
+        <fieldset>
+          <legend>Subscribers</legend>
+          <!-- <video-subscribers></video-subscribers> -->
+        </fieldset>
+      </section>
+      <section id="interaction-container">
+        <fieldset>
+          <legend>Chat</legend>
+          <!-- <live-chat></live-chat> -->
+        </fieldset>
+        <fieldset>
+          <legend>Poll</legend>
+          <!-- <live-poll-control></live-poll-control> -->
+        </fieldset>
+      </section>
+    </main>
+  </body>
+</html>

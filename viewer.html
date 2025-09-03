@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Viewer Page" />
+    <title>Viewer Page</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/styles.css" />
+
+    <!-- Load Vonage Video Client SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@vonage/client-sdk-video@latest/dist/js/opentok.min.js"></script>
+
+    <!-- Load Web Components-->
+    <!-- <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@vonage/video-subscriber@latest/video-subscriber.js/+esm"
+    ></script> -->
+
+    <!-- <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@vonage/screen-share@latest/screen-share.js/+esm"
+    ></script> -->
+
+    <!-- <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@vonage/live-chat@latest/live-chat.js/+esm"
+    ></script> -->
+
+    <!-- <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@vonage/live-poll@latest/live-poll.js/+esm"
+    ></script> -->
+
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Viewer</h1>
+    </header>
+    <main id="video-chat-container">
+      <section id="video-subscriber-container">
+        <fieldset>
+          <legend>Subscribers</legend>
+          <div id="screen"></div>
+          <div id="camera"></div>
+        </fieldset>
+      </section>
+      <section id="interaction-container">
+        <fieldset>
+          <legend>Chat</legend>
+          <!-- <live-chat></live-chat> -->
+        </fieldset>
+        <fieldset>
+          <legend>Poll</legend>
+          <!-- <live-poll></live-poll> -->
+        </fieldset>
+      </section>
+    </main>
+  </body>
+</html>
